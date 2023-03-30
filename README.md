@@ -1,1 +1,1 @@
-# ingenio_pedroaular
+# ingenio_pedroaular este proyecto es para la cursada
