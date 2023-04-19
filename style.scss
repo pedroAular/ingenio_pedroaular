@@ -1,0 +1,1103 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Josefin+Sans:ital@0;1&display=swap");
+
+$color1: #b9c7bc25;
+$color2: black;
+$color-box-shadonw: inset 0 0 5px #000,
+0 0 5px #000;
+$heightar: 700px;
+$padding: 20px;
+$width: 100%;
+
+@mixin tarjetas() {
+    width: 100%;
+    height: 600px;
+    background: $color1;
+    padding: 20px;
+    box-shadow: $color-box-shadonw;
+}
+
+@mixin jumbo() {
+    background-color: $color2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 0%;
+    margin-bottom: 0;
+}
+
+@mixin tex() {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@mixin img() {
+    background-size: cover;
+    background-position: center;
+    box-shadow: $color-box-shadonw;
+    height: 300px;
+    background-color: $color2;
+}
+
+@mixin tar() {
+    width: 100%;
+    height: 730px;
+    background: $color1;
+    padding: 20px;
+    box-shadow: $color-box-shadonw;
+}
+
+@mixin publi {
+    background-color: wheat;
+    border-radius: 5px;
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+@mixin publi1 {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+* {
+    font-family: "IBM Plex Mono", monospace;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: initial;
+}
+
+.barra {
+    background-color: sandybrown;
+}
+
+/* pagina principal */
+.jumbotron {
+    background-image: url(/imagery/CARRRETERASANJOSE.jpg);
+    @include jumbo();
+}
+
+.nosotros {
+    background-color: $color1;
+    margin: 0;
+    padding: 10px;
+}
+
+h1 {
+    @include tex();
+    background-color: rgba(244, 165, 96, 0.329);
+    text-shadow: $color-box-shadonw;
+    color: $color2;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    /* animacion h3 */
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+h2 {
+    @include tex();
+    background-color: rgba(244, 165, 96, 0.329);
+    text-shadow: $color-box-shadonw;
+    color: $color2;
+    padding: 0;
+    border-radius: 10px;
+    text-align: center;
+    text-transform: capitalize;
+}
+h4 {
+    @include tex();
+    font-size: 24px;
+    color: $color2;
+    text-shadow: $color-box-shadonw;
+}
+
+h5 {
+    font-size: 20px;
+    text-align: center;
+    color: $color2;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+p {
+    text-align: justify;
+    color: $color2;
+}
+a {
+    color: $color2;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-shadow: 0 0 5px rgba(245, 245, 245, 0.795);
+    font-style: italic;
+    text-align: center;
+}
+
+.tarjetas_principal {
+    height: auto;
+}
+
+.tar1 {
+    @include tarjetas();
+}
+
+.imgtreking {
+    @include img();
+    background-image: url(./imagery/sierra-g59e0fcc06_1280.jpg);
+}
+
+.tar2 {
+    @include tarjetas();
+}
+
+.imgrafting {
+    @include img();
+    background-image: url(./imagery/rafting2.jpg);
+}
+
+.tar3 {
+    @include tarjetas();
+}
+
+.imghospedaaje {
+    @include img();
+    background-image: url(./imagery/hospedaje2.jpg);
+}
+
+/* pagina treking */
+.jumbotron__treking {
+    background-image: url(/imagery/trekkingdos.jpg);
+    @include jumbo();
+}
+
+.tarjetas_principal_treking {
+    height: 3000px;
+}
+
+.btn1 {
+    text-align: center;
+}
+
+.tarjetas_principal_treking a {
+    background-color: #33333359;
+    border-radius: 30px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.tarchiletour {
+    @include tar();
+}
+
+.imgchiletour {
+    @include img();
+    background-image: url(./imagery/Tours-Cajon-del-Maipo.jpg);
+}
+
+.tarcondores {
+    @include tar();
+}
+
+.imgcondores {
+    @include img();
+    background-image: url(./imagery/miradorcondor.jpg);
+}
+
+.tarrutag25 {
+    @include tar();
+}
+
+.imgrutag25 {
+    @include img();
+    background-image: url(./imagery/ruta25.1.jpg);
+}
+
+.tartrekkingen {
+    @include tar();
+    height: 930px;
+}
+
+.imgtrekkingen {
+    @include img();
+    background-image: url(./imagery/treking7.jpg);
+}
+
+/* pagina rafting */
+.jumbotron__rafting {
+    background-image: url(./imagery/R1.jpg);
+    background-color: $color2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 0%;
+    margin-bottom: 0;
+}
+
+.tarjetas_principal_rafting a {
+    background-color: #33333359;
+    border-radius: 30px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.tarRuta {
+    @include tar();
+}
+
+.imgRuta {
+    @include img();
+    background-image: url(./imagery/R2.jpg);
+    height: vh-100;
+}
+
+.chile_Rafting {
+    @include tar();
+    height: 800px;
+}
+
+.imgchile_Rafting {
+    @include img();
+    background-image: url(./imagery/R4.jpg);
+}
+
+.tarnat {
+    @include tar();
+    height: 730px;
+}
+
+.imgnat {
+    @include img();
+    background-image: url(./imagery/R3.jpg);
+}
+
+/* hospedajes */
+.tarjetas_principal_hospedaje {
+    height: 2500px;
+}
+
+.tarjetas_principal_hospedaje a {
+    background-color: #33333359;
+    border-radius: 30px;
+    animation-name: aparecer;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.jumbotron__hospedaje {
+    background-image: url(./imagery/h2.png);
+    @include jumbo();
+}
+
+.tarcabanas {
+    @include tar();
+    height: 730px;
+}
+
+.imgcabanas {
+    @include img();
+    background-image: url(./imagery/h1.png);
+}
+
+.tartres {
+    @include tar();
+    height: 780px;
+}
+
+.imgtres {
+    @include img();
+    background-image: url(./imagery/h4.jpg);
+}
+
+.tarcascada {
+    @include tar();
+    height: 1000px;
+}
+
+.imgcascada {
+    @include img();
+    background-image: url(./imagery/h5.jpg);
+}
+
+/* galeria */
+.galeria {
+    width: 100%;
+    height: auto;
+    background-color: rgb(173, 109, 49);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    padding: 3px;
+    grid-gap: 3px;
+}
+
+.img {
+    background-color: rgb(207, 48, 207);
+    border: 2px solid #333;
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+}
+
+.img1 {
+    background-image: url(./imagery/trekkingdos.jpg);
+}
+
+.img2 {
+    background-image: url(./imagery/SAN_ALFONSODOS.jpg);
+}
+
+.img3 {
+    background-image: url(./imagery/INGENIOTRES.jpg);
+}
+
+.img4 {
+    background-image: url(./imagery/sou01.jpg.jpeg);
+}
+
+.img5 {
+    background-image: url(./imagery/hospedaje2.jpg);
+}
+
+.img6 {
+    background-image: url(./imagery/laguna2.jpg);
+}
+
+.img7 {
+    background-image: url(./imagery/INGENIO2.jpg);
+}
+
+.img8 {
+    background-image: url(./imagery/rafting2.jpg);
+}
+
+/* pagina de contacto */
+.cuerpo {
+    width: 325px;
+    height: 1410px;
+    font-size: x-small;
+    border-style: solid 10px;
+    background-color: $color1;
+    padding: 1px 10px 10px;
+}
+
+.cont {
+    position: center;
+    margin-top: 15px;
+    background-color: #ece2e27e;
+    text-transform: capitalize;
+    font-style: oblique;
+}
+
+.cajacon {
+    padding: 20px;
+}
+
+.img10 {
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    background-image: url(./imagery/sou02.jpg.jpeg);
+    border-radius: 3%;
+}
+
+.publi {
+    padding: 25px;
+    margin: 5px;
+    height: 1050px;
+    width: 100%;
+    background-color: $color1;
+    border-radius: 5%;
+    line-height: 100px;
+    text-align: center;
+}
+h3{
+    text-transform: capitalize;
+}
+
+.publi1 {
+    background-image: url(./imagery/publi1_rio_clarillo.jpg);
+    background-size: cover;
+    height: 300px;
+    @include publi();
+}
+
+.publi1 p {
+    font-style: none;
+    @include publi1();
+}
+
+.publi2 {
+    background-image: url(./imagery/publi2_tourastronomico.jpg);
+    background-size: cover;
+    height: 300px;
+    @include publi();
+}
+
+.publi2 p {
+    @include publi1();
+}
+
+.publi3 {
+    background-image: url(./imagery/publi3_cavalgata.jpg);
+    background-size: cover;
+    height: 300px;
+    @include publi();
+}
+
+.publi3 p {
+    @include publi1();
+}
+
+footer {
+    font-size: 15px;
+    background-color: $color2;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    scroll-padding-right: 100px;
+}
+
+footer a {
+    color: sandybrown;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+P1 {
+    color: yellow;
+}
+
+.redes {
+    color: #333;
+    font-size: 20px;
+    letter-spacing: 15px;
+}
+
+.subir {
+    width: 25px;
+    height: 25px;
+    background-color: sandybrown;
+    color: yellow;
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 25%;
+    border: 5px solid sandybrown;
+}
+
+@media only screen and (min-width: 323px) and (max-width: 479px) {
+    .cuerpo {
+        width: 480px;
+        height: 1470px;
+    }
+
+    .publi {
+        height: 1100px;
+        line-height: 300px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    /* treking */
+    .tarjetas_principal_treking {
+        height: 2550px;
+    }
+
+    .tarchiletour {
+        height: 650px;
+    }
+
+    .tarcondores {
+        height: 650px;
+    }
+
+    .tarrutag25 {
+        height: 600px;
+    }
+
+    .tartrekkingen {
+        height: 650px;
+    }
+
+    /* rafting */
+    .tarRuta {
+        height: 590px;
+    }
+
+    .chile_Rafting {
+        height: 630px;
+    }
+
+    .tarnat {
+        height: 590px;
+    }
+
+    /* hospedaje */
+    .tarjetas_principal_hospedaje {
+        height: 2250px;
+    }
+
+    .tarcabanas {
+        height: 700px;
+    }
+
+    .tarcascada {
+        height: 800px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+    .tarjetas_principal_hospedaje {
+        height: 1880px;
+    }
+
+    .tarcabanas {
+        height: 530px;
+    }
+
+    .tartres {
+        height: 680px;
+    }
+
+    .tarcascada {
+        height: 670px;
+    }
+
+    .cuerpo {
+        width: 100%;
+        height: 1495px;
+    }
+
+    .publi {
+        height: 700px;
+        line-height: 180px;
+    }
+}
+
+@media only screen and (min-width: 602px) and (max-width: 767px) {
+    .tarjetas_principal_hospedaje{
+        height: 1900px;
+    }
+    .tarcabanas{
+        height: 600px;
+    }
+    .tartres{
+        height: 680px;;
+    }
+    .tarcascada{
+        height: 700px;
+    }
+    .cuerpo {
+        width: 767px;
+        height: 1300px;
+        font-size: small;
+    }
+
+    .publi {
+        height: 700px;
+        line-height: 200px;
+    }
+
+    .publi1 {
+        margin-top: 8px;
+    }
+
+    .publi2 {
+        margin-top: 8px;
+    }
+
+    .publi3 {
+        margin-top: 8px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .jumbotron {
+        height: 390px;
+    }
+
+    .tarjetas_principal_treking {
+        height: 2650px;
+    }
+
+    .imgtreking {
+        height: 350px;
+    }
+
+    .tarjetas_principal_rafting {
+        height: 1800px;
+    }
+
+    .imgrafting {
+        height: 350px;
+    }
+    .tarjetas_principal_hospedaje{
+        height: 2060px;
+    }
+    .imghospedaaje {
+        height: 350px;
+    }
+
+    .tarchiletour {
+        height: 700px;
+    }
+
+    .tarcondores {
+        height: 700px;
+    }
+
+    .tartrekkingen {
+        height: 700px;
+    }
+
+    .chile_Rafting {
+        height: 700px;
+    }
+
+    .tarnat {
+        height: 500px;
+    }
+
+    .tartres {
+        height: 800px;
+    }
+
+    .tarcascada {
+        height: 650px;
+    }
+
+    .tarcabanas {
+        height: 630px;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+
+    .img1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .img2 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .img3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .img4 {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    .img5 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    .img6 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+
+    .img7 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .img8 {
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cuerpo {
+        width: 1023px;
+        height: 1550px;
+        font-size: medium;
+    }
+
+    .publi {
+        height: 1180px;
+        line-height: 300px;
+    }
+
+    .publi1 {
+        margin-top: 15px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .publi2 {
+        margin-top: 15px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .publi3 {
+        margin-top: 15px;
+        height: 350px;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .jumbotron {
+        height: 500px;
+    }
+
+    .tar1 {
+        height: 700px;
+    }
+
+    .tar2 {
+        height: 700px;
+    }
+
+    .tar3 {
+        height: 700px;
+    }
+
+    .imgtreking {
+        height: 500px;
+    }
+
+    .imgrafting {
+        height: 500px;
+    }
+
+    .imghospedaaje {
+        height: 500px;
+    }
+
+    .tarchiletour {
+        height: 300px;
+    }
+
+    .tarcondores {
+        height: 400px;
+    }
+
+    .tartrekkingen {
+        height: 600px;
+    }
+
+    .chile_Rafting {
+        height: 600px;
+    }
+
+    .tarnat {
+        height: 500px;
+    }
+
+    .tartres {
+        height: 800px;
+    }
+
+    .tarcascada {
+        height: 650px;
+    }
+
+    .tarcabanas {
+        height: 800px;
+    }
+
+    .tarjetas_principal_treking{
+        height: 2900px;
+    }
+    .jumbotron__treking {
+        height: 500px;
+    }
+
+    .tarchiletour {
+        height: 800px;
+    }
+
+    .tarchiletour {
+        height: 750px;
+    }
+
+    .imgchiletour {
+        height: 500px;
+    }
+
+    .tarcondores {
+        height: 730px;
+    }
+
+    .imgcondores {
+        height: 500px;
+    }
+
+    .tarrutag25 {
+        height: 700px;
+    }
+
+    .imgrutag25 {
+        height: 500px;
+    }
+
+    .tartrekkingen {
+        height: 730px;
+    }
+
+    .imgtrekkingen {
+        height: 500px;
+    }
+    .tarjetas_principal_hospedaje{
+        height: 2100px;
+    }
+    .imgcabanas{
+    height: 380px;
+    }
+    .tarcabanas{
+    height: 650px;
+    }
+    .imgtres{
+    height: 500px;
+    }
+    .imgcascada{
+    height: 350px;
+    }
+    .cuerpo{
+        width: 1024px;
+    }
+    .img10{
+        width: 1008px;
+    }
+    .publi{
+        width:1007px;
+    }
+    .publi1{
+        width: auto;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 200px);
+    }
+
+    .img1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    .img2 {
+        grid-column: 3/5;
+        grid-row: 1/3;
+    }
+
+    .img3 {
+        grid-column: 3/5;
+        grid-row: 3/5;
+    }
+
+    .img4 {
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+
+    .img5 {
+        grid-column: 1/3;
+        grid-row: 5/7;
+    }
+
+    .img6 {
+        grid-column: 3/5;
+        grid-row: 5/7;
+    }
+
+    .img7 {
+        grid-column: 1/3;
+        grid-row: 7/9;
+    }
+
+    .img8 {
+        grid-column: 3/5;
+        grid-row: 7/9;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cuerpo {
+        width: 1024px;
+        height: 1550px;
+    }
+
+    .publi {
+        height: 1300px;
+        line-height: 300px;
+    }
+
+    .publi1 {
+        margin-top: 15px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .publi1 p {
+        font-size: xx-large;
+        text-shadow: $color-box-shadonw;
+    }
+
+    .publi2 {
+        margin-top: 15px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .publi2 p {
+        font-size: xx-large;
+        text-shadow: $color-box-shadonw;
+    }
+
+    .publi3 {
+        margin-top: 15px;
+        height: 350px;
+        background-size: cover;
+    }
+
+    .publi3 p {
+        font-size: xx-large;
+        text-shadow: $color-box-shadonw;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .tarjetas_principal_treking {
+        height: 2880px;
+    }
+.img10{
+    height: 500px;
+    width: 1200px;
+}
+    .imgRuta {
+        height: 380px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+.cuerpo {
+    width: 1200px;
+    height: 1480px;
+    font-size: large;
+.img10{
+    width: 1280px;
+    padding: 5, 5,5,5px;
+}
+}
+
+.publi {
+    height: 1200px;
+    line-height: 300px;
+    width: 1275px;
+}
+
+.publi1 {
+    margin-top: 15px;
+    height: 350px;
+    background-size: cover;
+
+}
+
+.publi2 {
+    margin-top: 15px;
+    height: 350px;
+    background-size: cover;
+}
+
+.publi3 {
+    margin-top: 15px;
+    height: 350px;
+    background-size: cover;
+}
+}
