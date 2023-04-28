@@ -641,7 +641,7 @@ textarea {
 .imgpublicidad2{
     width: auto;
     height: 300px;
-    background-color: aquamarine;
+    background-color: $color1;
     background-image: url(./imagery/trekingnoc.jfif);
     background-size: cover;
     background-position: center;
@@ -1114,8 +1114,8 @@ P1 {
         width: 80%;
         height: 370px;
         margin-left: 80px;
-        background-size:115vh;
-        background-repeat: no-repeat;
+        background-size:cover;
+        background-color: $color1;
         background-position: center;
     }
     .imgpublicidad3{
@@ -1196,6 +1196,7 @@ P1 {
         width: 80%;
         height: 300px;
         margin-left: 80px;
+        background-color: $color1;
         background-size: cover;
         background-position: center;
     }
