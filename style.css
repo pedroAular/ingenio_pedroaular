@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&family=Josefin+Sans:ital@0;1&display=swap");
 * {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -11,13 +11,38 @@ html {
 }
 
 .barra {
-  background-color: sandybrown;
+  background-color: rgba(0, 0, 0, 0.884);
 }
 
 /* pagina principal */
+.tarjetas_principal a {
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-delay: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .jumbotron {
   background-image: url(/imagery/CARRRETERASANJOSE.jpg);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.829);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -27,7 +52,7 @@ html {
 }
 
 .nosotros {
-  background-color: rgba(185, 199, 188, 0.1450980392);
+  background-color: rgba(0, 0, 0, 0.829);
   margin: 0;
   padding: 10px;
 }
@@ -35,9 +60,11 @@ html {
 h1 {
   text-align: center;
   text-transform: capitalize;
-  background-color: rgba(244, 165, 96, 0.329);
+  background-color: rgba(255, 255, 255, 0.5019607843);
+  /* background-color: rgba(244, 165, 96, 0.329); */
   text-shadow: inset 0 0 5px #000, 0 0 5px #000;
   color: black;
+  font-weight: bold;
   padding: 0;
   border-radius: 10px;
   text-align: center;
@@ -64,7 +91,7 @@ h1 {
 h2 {
   text-align: center;
   text-transform: capitalize;
-  background-color: rgba(244, 165, 96, 0.329);
+  background-color: rgba(238, 162, 96, 0.274);
   text-shadow: inset 0 0 5px #000, 0 0 5px #000;
   color: black;
   padding: 0;
@@ -79,26 +106,29 @@ h4 {
   font-size: 24px;
   color: black;
   text-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  background-color: #fff;
+  border-radius: 30px;
 }
 
 h5 {
   font-size: 20px;
   text-align: center;
-  color: black;
+  color: #fff;
   margin-bottom: 10px;
   text-transform: capitalize;
+  background-color: B;
 }
 
 p {
   text-align: justify;
-  color: black;
+  color: #fff;
 }
 
 a {
   color: black;
   font-size: 20px;
   text-transform: capitalize;
-  text-shadow: 0 0 5px rgba(245, 245, 245, 0.795);
+  color: black;
   font-style: italic;
   text-align: center;
 }
@@ -110,7 +140,7 @@ a {
 .tar1 {
   width: 100%;
   height: 600px;
-  background: rgba(185, 199, 188, 0.1450980392);
+  background: rgba(0, 0, 0, 0.829);
   padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
 }
@@ -127,7 +157,7 @@ a {
 .tar2 {
   width: 100%;
   height: 600px;
-  background: rgba(185, 199, 188, 0.1450980392);
+  background: rgba(0, 0, 0, 0.829);
   padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
 }
@@ -144,7 +174,7 @@ a {
 .tar3 {
   width: 100%;
   height: 600px;
-  background: rgba(185, 199, 188, 0.1450980392);
+  background: rgba(0, 0, 0, 0.829);
   padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
 }
@@ -161,7 +191,7 @@ a {
 /* pagina treking */
 .jumbotron__treking {
   background-image: url(/imagery/trekkingdos.jpg);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.829);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -172,6 +202,7 @@ a {
 
 .tarjetas_principal_treking {
   height: 3000px;
+  background-color: rgba(0, 0, 0, 0.829);
 }
 
 .btn1 {
@@ -179,8 +210,10 @@ a {
 }
 
 .tarjetas_principal_treking a {
-  background-color: rgba(51, 51, 51, 0.3490196078);
+  background-color: black;
+  color: white;
   border-radius: 30px;
+  padding: 10px;
   animation-name: aparecer;
   animation-duration: 3s;
   animation-delay: 7s;
@@ -203,8 +236,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
 }
 
 .imgchiletour {
@@ -220,8 +253,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
 }
 
 .imgcondores {
@@ -237,8 +270,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
 }
 
 .imgrutag25 {
@@ -254,8 +287,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
   height: 930px;
 }
 
@@ -271,7 +304,7 @@ a {
 /* pagina rafting */
 .jumbotron__rafting {
   background-image: url(./imagery/R1.jpg);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.829);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -279,8 +312,14 @@ a {
   margin-bottom: 0;
 }
 
+.tarjetas_principal_rafting {
+  background-color: rgba(0, 0, 0, 0.829);
+}
+
 .tarjetas_principal_rafting a {
-  background-color: rgba(51, 51, 51, 0.3490196078);
+  background-color: black;
+  color: white;
+  padding: 10px;
   border-radius: 30px;
   animation-name: aparecer;
   animation-duration: 3s;
@@ -304,8 +343,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
 }
 
 .imgRuta {
@@ -322,8 +361,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
   height: 800px;
 }
 
@@ -340,8 +379,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
   height: 730px;
 }
 
@@ -357,10 +396,13 @@ a {
 /* hospedajes */
 .tarjetas_principal_hospedaje {
   height: 2500px;
+  background-color: rgba(0, 0, 0, 0.829);
 }
 
 .tarjetas_principal_hospedaje a {
-  background-color: rgba(51, 51, 51, 0.3490196078);
+  background-color: black;
+  color: white;
+  padding: 10px;
   border-radius: 30px;
   animation-name: aparecer;
   animation-duration: 3s;
@@ -382,7 +424,7 @@ a {
 
 .jumbotron__hospedaje {
   background-image: url(./imagery/h2.png);
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.829);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -395,8 +437,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
   height: 730px;
 }
 
@@ -413,8 +455,8 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+  padding: 20px;
   height: 780px;
 }
 
@@ -431,9 +473,9 @@ a {
   width: 100%;
   height: 730px;
   background: rgba(185, 199, 188, 0.1450980392);
-  padding: 20px;
   box-shadow: inset 0 0 5px #000, 0 0 5px #000;
-  height: 1000px;
+  padding: 20px;
+  height: 990px;
 }
 
 .imgcascada {
@@ -499,107 +541,189 @@ a {
 
 /* pagina de contacto */
 .cuerpo {
-  width: 325px;
-  height: 1410px;
+  width: 100%;
+  height: 2290px;
   font-size: x-small;
   border-style: solid 10px;
+  padding: 10px 10px 10px;
   background-color: rgba(185, 199, 188, 0.1450980392);
-  padding: 1px 10px 10px;
 }
 
 .cont {
   position: center;
   margin-top: 15px;
-  background-color: rgba(236, 226, 226, 0.4941176471);
   text-transform: capitalize;
   font-style: oblique;
 }
 
 .cajacon {
   padding: 20px;
+  height: 430px;
+  border-radius: 5px;
+}
+
+form {
+  width: 290px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: auto;
+  background-color: rgba(77, 71, 71, 0.541);
+  padding: 5px 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border-radius: 7%;
+}
+
+input {
+  width: 100%;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.562);
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+  min-height: 120px;
+  max-height: 100px;
+  min-width: 100px;
+  max-width: 100%;
+  border-radius: 4%;
+  background-color: rgba(0, 0, 0, 0.562);
+  border-inline: solid 2px;
+}
+
+.boton {
+  background: #31384a;
+  color: #fff;
+  padding: 20px;
+}
+
+.boton:hover {
+  cursor: pointer;
 }
 
 .img10 {
   width: 100%;
   background-size: cover;
-  height: 300px;
+  height: 510px;
   background-image: url(./imagery/sou02.jpg.jpeg);
-  border-radius: 3%;
 }
 
-.publi {
-  padding: 25px;
-  margin: 5px;
-  height: 1050px;
+.publicidad {
   width: 100%;
-  background-color: rgba(185, 199, 188, 0.1450980392);
+  height: 1550px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.829);
+  box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+}
+
+.publicidad a {
+  line-height: 80px;
+  background-color: black;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  animation-name: aparecer;
+  animation-duration: 3s;
+  animation-delay: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.publicidad1 {
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  color: #fff;
+  padding: 15px;
+  background-color: rgb(25, 8, 126);
+  background: rgba(185, 199, 188, 0.1450980392);
+  box-shadow: inset 0 0 5px #000, 0 0 5px #000;
+}
+
+.imgpublicidad1 {
+  width: 100%;
+  height: 300px;
+  background-color: aquamarine;
+  background-image: url(./imagery/cabalgata2.jfif);
+  background-size: cover;
+  background-position: center;
+}
+
+.publicidad2 {
+  margin-top: 10px;
   border-radius: 5%;
-  line-height: 100px;
   text-align: center;
+  width: 100%;
+  height: 520px;
+  color: #fff;
+  background-color: rgb(25, 8, 126);
+  background: rgba(185, 199, 188, 0.1450980392);
+  box-shadow: inset 0 0 5px #000, 0 0 5px #000;
 }
 
-h3 {
-  text-transform: capitalize;
-}
-
-.publi1 {
-  background-image: url(./imagery/publi1_rio_clarillo.jpg);
-  background-size: cover;
+.imgpublicidad2 {
+  width: auto;
   height: 300px;
-  background-color: wheat;
-  border-radius: 5px;
-  margin-top: 10%;
-  text-decoration: none;
-}
-
-.publi1 p {
-  font-style: none;
-  font-size: medium;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  margin-top: 5px;
-}
-
-.publi2 {
-  background-image: url(./imagery/publi2_tourastronomico.jpg);
+  background-color: aquamarine;
+  background-image: url(./imagery/trekingnoc.jfif);
   background-size: cover;
-  height: 300px;
-  background-color: wheat;
-  border-radius: 5px;
-  margin-top: 10%;
-  text-decoration: none;
+  background-position: center;
 }
 
-.publi2 p {
-  font-size: medium;
-  font-weight: bold;
+.publicidad3 {
+  margin-top: 10px;
+  border-radius: 3%;
   text-align: center;
-  padding: 10px;
-  margin-top: 5px;
+  width: 100%;
+  height: 520px;
+  color: #fff;
+  color: #fff;
+  background-color: rgb(25, 8, 126);
+  background: rgba(185, 199, 188, 0.1450980392);
+  box-shadow: inset 0 0 5px #000, 0 0 5px #000;
 }
 
-.publi3 {
-  background-image: url(./imagery/publi3_cavalgata.jpg);
+.imgpublicidad3 {
+  width: auto;
+  height: 300px;
+  background-color: aquamarine;
+  background-image: url(./imagery/trekingpubli3.jfif);
   background-size: cover;
-  height: 300px;
-  background-color: wheat;
-  border-radius: 5px;
-  margin-top: 10%;
-  text-decoration: none;
-}
-
-.publi3 p {
-  font-size: medium;
-  font-weight: bold;
-  text-align: center;
-  padding: 10px;
-  margin-top: 5px;
+  background-position: center;
 }
 
 footer {
   font-size: 15px;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.884);
   font-style: oblique;
   font-weight: bold;
   text-align: center;
@@ -608,15 +732,15 @@ footer {
 }
 
 footer a {
-  color: sandybrown;
+  color: black;
 }
 
 footer a:hover {
-  color: #333;
+  color: white;
 }
 
 P1 {
-  color: yellow;
+  color: rgba(226, 219, 214, 0.452);
 }
 
 .redes {
@@ -639,16 +763,6 @@ P1 {
   border: 5px solid sandybrown;
 }
 
-@media only screen and (min-width: 323px) and (max-width: 479px) {
-  .cuerpo {
-    width: 480px;
-    height: 1470px;
-  }
-  .publi {
-    height: 1100px;
-    line-height: 300px;
-  }
-}
 @media only screen and (min-width: 480px) {
   .galeria {
     grid-template-columns: 1fr 1fr;
@@ -688,7 +802,7 @@ P1 {
     height: 700px;
   }
   .tarcascada {
-    height: 800px;
+    height: 770px;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 600px) {
@@ -706,11 +820,7 @@ P1 {
   }
   .cuerpo {
     width: 100%;
-    height: 1495px;
-  }
-  .publi {
-    height: 700px;
-    line-height: 180px;
+    height: 1650px;
   }
 }
 @media only screen and (min-width: 602px) and (max-width: 767px) {
@@ -727,22 +837,27 @@ P1 {
     height: 700px;
   }
   .cuerpo {
-    width: 767px;
-    height: 1300px;
+    width: 100%;
+    height: 1550px;
     font-size: small;
   }
-  .publi {
-    height: 700px;
-    line-height: 200px;
+  .imgpublicidad1 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
+    background-position: center;
   }
-  .publi1 {
-    margin-top: 8px;
+  .imgpublicidad2 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
+    background-position: center;
   }
-  .publi2 {
-    margin-top: 8px;
-  }
-  .publi3 {
-    margin-top: 8px;
+  .imgpublicidad3 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
+    background-position: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
@@ -750,46 +865,46 @@ P1 {
     height: 390px;
   }
   .tarjetas_principal_treking {
-    height: 2650px;
+    height: 2320px;
   }
   .imgtreking {
     height: 350px;
   }
   .tarjetas_principal_rafting {
-    height: 1800px;
+    height: 1770px;
   }
   .imgrafting {
     height: 350px;
   }
   .tarjetas_principal_hospedaje {
-    height: 2060px;
+    height: 1810px;
   }
   .imghospedaaje {
     height: 350px;
   }
   .tarchiletour {
-    height: 700px;
+    height: 550px;
   }
   .tarcondores {
-    height: 700px;
+    height: 600px;
   }
   .tartrekkingen {
-    height: 700px;
+    height: 550px;
   }
   .chile_Rafting {
-    height: 700px;
+    height: 600px;
   }
   .tarnat {
-    height: 500px;
+    height: 540px;
   }
   .tartres {
-    height: 800px;
+    height: 590px;
   }
   .tarcascada {
     height: 650px;
   }
   .tarcabanas {
-    height: 630px;
+    height: 550px;
   }
   .galeria {
     grid-template-columns: 1fr 1fr 1fr;
@@ -827,31 +942,31 @@ P1 {
     grid-column: 2/4;
     grid-row: 4/5;
   }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .cuerpo {
-    width: 1023px;
-    height: 1550px;
+    width: 100%;
+    height: 1750px;
     font-size: medium;
   }
-  .publi {
-    height: 1180px;
-    line-height: 300px;
-  }
-  .publi1 {
-    margin-top: 15px;
-    height: 350px;
+  .imgpublicidad1 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
     background-size: cover;
+    background-position: center;
   }
-  .publi2 {
-    margin-top: 15px;
-    height: 350px;
+  .imgpublicidad2 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
     background-size: cover;
+    background-position: center;
   }
-  .publi3 {
-    margin-top: 15px;
-    height: 350px;
+  .imgpublicidad3 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
     background-size: cover;
+    background-position: center;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -944,137 +1059,120 @@ P1 {
   }
   .imgtres {
     height: 500px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
   }
   .imgcascada {
     height: 350px;
+    background-size: cover;
+    background-position: center;
   }
   .cuerpo {
     width: 1024px;
   }
   .img10 {
-    width: 1008px;
+    width: 100%;
   }
-  .publi {
-    width: 1007px;
+  .imgpublicidad1 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
+    background-size: cover;
+    background-position: center;
   }
-  .publi1 {
-    width: auto;
+  .imgpublicidad2 {
+    width: 80%;
+    height: 370px;
+    margin-left: 80px;
+    background-size: 115vh;
+    background-repeat: no-repeat;
+    background-position: center;
   }
-  .galeria {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 200px);
-  }
-  .img1 {
-    grid-column: 1/3;
-    grid-row: 1/3;
-  }
-  .img2 {
-    grid-column: 3/5;
-    grid-row: 1/3;
-  }
-  .img3 {
-    grid-column: 3/5;
-    grid-row: 3/5;
-  }
-  .img4 {
-    grid-column: 1/3;
-    grid-row: 3/5;
-  }
-  .img5 {
-    grid-column: 1/3;
-    grid-row: 5/7;
-  }
-  .img6 {
-    grid-column: 3/5;
-    grid-row: 5/7;
-  }
-  .img7 {
-    grid-column: 1/3;
-    grid-row: 7/9;
-  }
-  .img8 {
-    grid-column: 3/5;
-    grid-row: 7/9;
+  .imgpublicidad3 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
+    background-size: cover;
+    background-position: center;
   }
 }
-@media only screen and (min-width: 1024px) {
-  .cuerpo {
-    width: 1024px;
-    height: 1550px;
-  }
-  .publi {
-    height: 1300px;
-    line-height: 300px;
-  }
-  .publi1 {
-    margin-top: 15px;
-    height: 350px;
-    background-size: cover;
-  }
-  .publi1 p {
-    font-size: xx-large;
-    text-shadow: inset 0 0 5px #000, 0 0 5px #000;
-  }
-  .publi2 {
-    margin-top: 15px;
-    height: 350px;
-    background-size: cover;
-  }
-  .publi2 p {
-    font-size: xx-large;
-    text-shadow: inset 0 0 5px #000, 0 0 5px #000;
-  }
-  .publi3 {
-    margin-top: 15px;
-    height: 350px;
-    background-size: cover;
-  }
-  .publi3 p {
-    font-size: xx-large;
-    text-shadow: inset 0 0 5px #000, 0 0 5px #000;
-  }
+.galeria {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 200px);
 }
+
+.img1 {
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+
+.img2 {
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
+
+.img3 {
+  grid-column: 3/5;
+  grid-row: 3/5;
+}
+
+.img4 {
+  grid-column: 1/3;
+  grid-row: 3/5;
+}
+
+.img5 {
+  grid-column: 1/3;
+  grid-row: 5/7;
+}
+
+.img6 {
+  grid-column: 3/5;
+  grid-row: 5/7;
+}
+
+.img7 {
+  grid-column: 1/3;
+  grid-row: 7/9;
+}
+
+.img8 {
+  grid-column: 3/5;
+  grid-row: 7/9;
+}
+
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .tarjetas_principal_treking {
-    height: 2880px;
+  .cuerpo {
+    width: 100%;
+    height: 1750px;
+    font-size: medium;
   }
   .img10 {
-    height: 500px;
-    width: 1200px;
-  }
-  .imgRuta {
-    height: 380px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .cuerpo {
-    width: 1200px;
-    height: 1480px;
-    font-size: large;
-  }
-  .cuerpo .img10 {
-    width: 1280px;
-    padding: 5, 5, 5, 5px;
-  }
-  .publi {
-    height: 1200px;
-    line-height: 300px;
-    width: 1275px;
-  }
-  .publi1 {
-    margin-top: 15px;
-    height: 350px;
+    width: 100%;
     background-size: cover;
+    background-position: center;
   }
-  .publi2 {
-    margin-top: 15px;
-    height: 350px;
+  .imgpublicidad1 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
     background-size: cover;
+    background-position: center;
   }
-  .publi3 {
-    margin-top: 15px;
-    height: 350px;
+  .imgpublicidad2 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
     background-size: cover;
+    background-position: center;
+  }
+  .imgpublicidad3 {
+    width: 80%;
+    height: 300px;
+    margin-left: 80px;
+    background-size: cover;
+    background-position: center;
   }
 }
 
